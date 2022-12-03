@@ -1,0 +1,249 @@
+.auth__container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+
+  @media screen and (max-width: 1260px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 1260px) {
+    grid-template-columns: 0.7fr 1fr;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      img {
+        margin-top: 62px;
+        margin-left: 62px;
+
+        @media screen and (max-width: 1260px) {
+          margin-top: 12px;
+          margin-left: 12px;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-top: 2px;
+          margin-left: 2px;
+        }
+      }
+    }
+
+    .image {
+      height: 437px;
+      width: 612px;
+      margin-left: 128px;
+
+      @media screen and (max-width: 1260px) {
+        margin-left: 2px;
+      }
+
+      @media screen and (max-width: 1100px) {
+        height: 300px;
+        width: 412px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-left: 2px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .rightSide {
+    padding: 19px 36px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+      padding: 19px 19px;
+      box-sizing: border-box;
+    }
+
+    .formContainer {
+      height: 100%;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      padding: 3rem 4rem;
+      box-sizing: border-box;
+
+      .form {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          margin-top: 60px;
+        }
+
+        .inputs {
+          width: 100%;
+          margin-top: 100px;
+
+          .input {
+            display: flex;
+            margin-bottom: 45px;
+
+            .countyCode {
+              width: 30%;
+              margin-right: 10px;
+            }
+
+            input {
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid #a4a4a4;
+              outline: none;
+              font-size: 16px;
+              margin-bottom: 20px;
+              resize: none;
+
+              padding: 0 20px;
+              box-sizing: border-box;
+            }
+          }
+
+          .input1 {
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 100px;
+
+            input {
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid #a4a4a4;
+              outline: none;
+              font-size: 16px;
+              resize: none;
+              margin-bottom: 5px;
+
+              padding: 0 20px;
+              box-sizing: border-box;
+            }
+
+            label {
+              margin-left: 20px;
+              color: #7e7e7e;
+              font-size: 12px;
+            }
+          }
+
+          .buttonContainer1 {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+
+            .nBtn {
+              width: 142px;
+              height: 49px;
+              border: none;
+              outline: none;
+              background-color: #1678cb;
+              border: 2px solid #1678cb;
+              border-radius: 15px;
+              color: #fff;
+              font-size: 16px;
+              font-weight: 500;
+              cursor: pointer;
+
+              &:hover {
+                background-color: #fff;
+                border: 2px solid #1678cb;
+                color: #1678cb;
+              }
+
+              i {
+                margin-left: 10px;
+              }
+            }
+          }
+
+          .buttonContainer2 {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            align-self: center;
+
+            .backBtn {
+              border: none;
+              outline: none;
+              background-color: #fff;
+              color: #767676;
+              font-size: 12px;
+              font-weight: bold;
+
+              margin-right: 30%;
+              margin-left: 20px;
+              cursor: pointer;
+            }
+
+            .nBtn {
+              width: 142px;
+              height: 49px;
+              border: none;
+              outline: none;
+              background-color: #1678cb;
+              border: 2px solid #1678cb;
+              color: white;
+              font-size: 16px;
+              font-weight: 500;
+              border-radius: 15px;
+              cursor: pointer;
+
+              &:hover {
+                background-color: #fff;
+                border: 2px solid #1678cb;
+                color: #1678cb;
+
+                .link {
+                  color: #1678cb;
+                }
+              }
+
+              i {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+
+        .footer {
+          margin-top: 6rem;
+          display: flex;
+          justify-content: flex-end;
+
+          p {
+            font-size: 14px;
+            color: #a4a4a4;
+            margin-right: 3px;
+          }
+
+          a {
+            color: #f50057;
+            text-decoration: none;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

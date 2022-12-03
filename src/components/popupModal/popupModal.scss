@@ -1,0 +1,109 @@
+/* Modal */
+.op__overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: hsla(0, 0%, 71%, 0.3);
+  backdrop-filter: blur(1px);
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  .op__modalContainer {
+    overflow-y: scroll;
+    max-width: 800px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    z-index: 200;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .op__createQuizPopup__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.5rem 1rem 2rem 0.5rem;
+      box-sizing: border-box;
+
+      width: 100%;
+      height: 100%;
+
+      .op__top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        i {
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: red;
+          padding: 3px 3px;
+          box-sizing: border-box;
+          border-radius: 50%;
+          transition: 0.3s ease-in-out;
+        }
+      }
+
+      .op__header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .op__buttonContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .op__btn {
+          border: none;
+          border-radius: 10px;
+          outline: none;
+          transition: 0.3s ease-in-out;
+          font-size: 15px;
+
+          padding: 0.5rem 1rem;
+          box-sizing: border-box;
+          color: white;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+
+        .op__create__btn {
+          background: var(--primary-bg);
+          color: white;
+        }
+
+        .op__cancel__btn {
+          background: var(--secondary-bg);
+          color: red;
+        }
+      }
+    }
+  }
+}
