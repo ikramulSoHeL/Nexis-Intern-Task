@@ -21,6 +21,8 @@
     flex-direction: column;
 
     .logo {
+      width: 100%;
+
       img {
         margin-top: 62px;
         margin-left: 62px;
@@ -42,6 +44,10 @@
       width: 612px;
       margin-left: 128px;
 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       @media screen and (max-width: 1260px) {
         margin-left: 2px;
       }
@@ -52,7 +58,9 @@
       }
 
       @media screen and (max-width: 768px) {
-        margin-left: 2px;
+        margin-left: 15px;
+        height: 237px;
+        width: 312px;
       }
 
       img {
@@ -80,6 +88,11 @@
       padding: 3rem 4rem;
       box-sizing: border-box;
 
+      @media screen and (max-width: 768px) {
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+      }
+
       .form {
         height: 100%;
         width: 100%;
@@ -90,15 +103,27 @@
 
         h2 {
           margin-top: 60px;
+
+          @media screen and (max-width: 768px) {
+            margin-top: 20px;
+          }
         }
 
         .inputs {
           width: 100%;
           margin-top: 100px;
 
+          @media screen and (max-width: 768px) {
+            margin-top: 40px;
+          }
+
           .input {
             display: flex;
             margin-bottom: 45px;
+
+            @media screen and (max-width: 768px) {
+              margin-bottom: 30px;
+            }
 
             .countyCode {
               width: 30%;
@@ -116,6 +141,10 @@
 
               padding: 0 20px;
               box-sizing: border-box;
+
+              @media screen and (max-width: 768px) {
+                padding: 0 10px;
+              }
             }
           }
 
@@ -152,13 +181,17 @@
             align-self: center;
             justify-content: center;
 
+            @media screen and (max-width: 768px) {
+              margin-top: 20px;
+            }
+
             .nBtn {
               width: 142px;
               height: 49px;
               border: none;
               outline: none;
-              background-color: #1678cb;
-              border: 2px solid #1678cb;
+              background-color: var(--primary-color);
+              border: 2px solid var(--primary-color);
               border-radius: 15px;
               color: #fff;
               font-size: 16px;
@@ -167,8 +200,8 @@
 
               &:hover {
                 background-color: #fff;
-                border: 2px solid #1678cb;
-                color: #1678cb;
+                border: 2px solid var(--primary-color);
+                color: var(--primary-color);
               }
 
               i {
@@ -182,6 +215,10 @@
             width: 100%;
             display: flex;
             align-self: center;
+
+            @media screen and (max-width: 768px) {
+              margin-top: 20px;
+            }
 
             .backBtn {
               border: none;
@@ -201,8 +238,8 @@
               height: 49px;
               border: none;
               outline: none;
-              background-color: #1678cb;
-              border: 2px solid #1678cb;
+              background-color: var(--primary-color);
+              border: 2px solid var(--primary-color);
               color: white;
               font-size: 16px;
               font-weight: 500;
@@ -211,8 +248,8 @@
 
               &:hover {
                 background-color: #fff;
-                border: 2px solid #1678cb;
-                color: #1678cb;
+                border: 2px solid var(--primary-color);
+                color: var(--primary-color);
 
                 .link {
                   color: #1678cb;
@@ -230,6 +267,10 @@
           margin-top: 6rem;
           display: flex;
           justify-content: flex-end;
+
+          @media screen and (max-width: 768px) {
+            margin-top: 2rem;
+          }
 
           p {
             font-size: 14px;
