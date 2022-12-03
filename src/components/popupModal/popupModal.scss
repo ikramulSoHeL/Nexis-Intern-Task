@@ -29,11 +29,14 @@
 
     @media screen and (max-width: 700px) {
       flex-direction: column;
-      top: 0;
+      top: 100px;
       left: 0;
       transform: none;
       width: 100%;
       height: 100%;
+
+      max-width: 400px;
+      max-height: 600px;
     }
 
     .op__createQuizPopup__container {

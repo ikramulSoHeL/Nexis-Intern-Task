@@ -43,7 +43,7 @@ export default function BasicTable({ data }) {
         component={Paper}
         style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
       >
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table sx={{ minWidth: 100 }} aria-label="simple table">
           <TableHead>
             <TableRow style={{ borderBlockEnd: ".3px solid #666666" }}>
               <TableCell align="center">Date</TableCell>
